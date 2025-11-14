@@ -6,7 +6,7 @@ oh so you want to read from keyboard?
 As always, we start with the classic: `ls -la`.  
 Boom—there it is. A mysterious file literally named `-`.
 
-![bandit1_flag](things/bandit1_ls.png)
+![bandit1_flag](img/bandit1_ls.png)
 
 Naturally, your first instinct is to run `cat -` and hope a flag pops out.  
 But nope. Plot twist: in Linux, `-` is a special token that means _“read from stdin/stdout.”_
@@ -15,7 +15,7 @@ So instead of showing the file, `cat -` basically goes:
 “Oh, you want me to read… your keyboard? Sure buddy.”  
 And then it just parrots whatever you type.
 
-![hi meow](things/bandit1_hi_meow.png)
+![hi meow](img/bandit1_hi_meow.png)
 
 ### So what do we do?
 This challenge is basically trolling you with a cursed filename.  
@@ -31,5 +31,5 @@ Relative or absolute path, both work.
 
 And just like that — boom, flag revealed.
 
-![testing](things/bandit2_flag.png)
+![testing](img/bandit2_flag.png)
 

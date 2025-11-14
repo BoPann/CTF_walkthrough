@@ -17,6 +17,6 @@ You should be able to see a readme file. How do we read file in Linux? a cat! (m
 
 `cat readme`
 
-![bandit0 flag](bandit0_flag.png)
+![bandit0 flag](img/bandit0_flag.png)
 
 copy the flag you see and we can move on to another level!
