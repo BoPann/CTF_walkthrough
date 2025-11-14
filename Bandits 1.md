@@ -5,7 +5,8 @@ oh so you want to read from keyboard?
 ### initial thoughts
 As always, we start with the classic: `ls -la`.  
 Boom—there it is. A mysterious file literally named `-`.
-![[Pasted image 20251114114749.png]]
+
+![bandit1_flag](things/bandit1_ls.png)
 
 Naturally, your first instinct is to run `cat -` and hope a flag pops out.  
 But nope. Plot twist: in Linux, `-` is a special token that means _“read from stdin/stdout.”_
@@ -13,10 +14,12 @@ But nope. Plot twist: in Linux, `-` is a special token that means _“read from 
 So instead of showing the file, `cat -` basically goes:  
 “Oh, you want me to read… your keyboard? Sure buddy.”  
 And then it just parrots whatever you type.
-![[Pasted image 20251114115005.png]]
+
+![hi meow](things/hi_meow)
+
 ### So what do we do?
 This challenge is basically trolling you with a cursed filename.  
-The workaround? **Escape the filename by giving Linux the actual path**, so it won’t interpret `-` as an option. Extended reading: [relative vs absolute path](relative\vs\absolute\path.md)
+The workaround? **Escape the filename by giving Linux the actual path**, so it won’t interpret `-` as an option. Extended reading: [relative vs absolute path](relative_absolute_path.md)
 
 Tell Linux, “No no, not stdin — _the file._”  
 Relative or absolute path, both work.
