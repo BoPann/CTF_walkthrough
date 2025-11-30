@@ -8,6 +8,7 @@ And… that’s about it. Linux commands? Yeah, probably not your close friends 
 Buckle up! We’re diving in, level by level. Let’s go!
 
 [level 0](Bandit%200)
+
 [level 1](Bandit%201)
 
 ### overthewire.org
